@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link rel="stylesheet" href="styles.css">
+	<title>Check password strength</title>
+</head>
+<body>
+<div class="title-1" style="display:flex;justify-content:center;
+position:relative">
+			<h1>Check <br><span>Password Strength</span> </h1>
+			</div>
+		
+	<form action="db.php" method="post">
+		<div class="password-container">
+			<label>Enter Password</label>
+			<input type="password" name="password1" id="password-field" placeholder="Password" >
+			<img src="eye (open).png" alt="" id="eyeicon" 
+			style="position:relative;
+			left:242px;
+			top: -45px;">
+			<div class="strength-container">
+				<p class="title">
+					Password strength:
+					<span class="strength-text"></span>
+				</p>
+				
+				<div class="strength-bar-wrapper">
+					<div id="strength-bar"></div>
+				</div>
+				<p class="strength-description">
+					Passwords should be at least <i>7</i> characters long and max <i>12</i>. <br>
+					Try use <strong>lowercasing</strong> and <strong>uppercasing</strong>, <strong>numbers</strong> and <strong>symbols(eg. @,$,#)</strong>.
+			</div>	
+		</div>
+
+		<button type="submit" id="submit" disabled>Submit</button>
+		
+	</p>
+				<a href="https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html" target="_blank" style="position:relative;
+				left: -27px;
+				top: 30px">Owasp Guidelines</a>
+				</p>
+	</form>
+
+	<script src="script.js"></script> <!-- Link to the javascript file -->
+</body>
+</html>
