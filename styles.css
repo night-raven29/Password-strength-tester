@@ -132,7 +132,21 @@ button{
 	position: relative;
 	transition: all 0.3s ease-in-out;
 }
-	  
+
+button1{
+	padding: 8px 25px;
+	font-size: 16px;
+	border: white;
+	border-radius: 4px;
+	color: rgb(19, 17, 17);
+	background-color: #019f55;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	left: 84px;
+	position: relative;
+	transition: all 0.3s ease-in-out;
+}
 button.enabled {
 		animation: enable 0.3s ease-in-out;
 	  }
