@@ -20,6 +20,8 @@ position:relative">
 			style="position:relative;
 			left:242px;
 			top: -45px;">
+			<input type="generator" name="generator" id="generator-field" placeholder="Generate Password" >
+
 			<div class="strength-container">
 				<p class="title">
 					Password strength:
@@ -35,15 +37,29 @@ position:relative">
 			</div>	
 		</div>
 
-		<button type="submit" id="submit" disabled>Submit</button>
+		<button type="submit" id="submit" >Submit</button>
+		<img src="copy-link-icon.png" onclick="copypassword()" alt="" id="eyeicon" 
+		style="position: relative;
+		left: 244px;
+		top: -81px;
+		max-width: 45px;
+		max-height: 17px;">
+
 		
-	</p>
+	<!--</p>
 				<a href="https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html" target="_blank" style="position:relative;
 				left: -27px;
 				top: 30px">Owasp Guidelines</a>
-				</p>
+				</p>-->
 	</form>
+	<button onclick=createPassword() type="Generate" id="Generate" 
+		style="margin: 10px; 
+		position: relative;
+		justify-content: center;
+		align-items: center;
+		left: 805px;
+		top: -51px;">Generate Password</button>
 
-	<script src="script.js"></script> <!-- Link to the javascript file -->
+	<script src="script.js"></script> 
 </body>
 </html>
