@@ -12,14 +12,15 @@ position:relative">
 			<h1>Check <br><span>Password Strength</span> </h1>
 			</div>
 		
-	<form action="db.php" method="post">
-		<div class="password-container">
+			<form action="{{ url_for('submit') }}" method="POST">
+				<div class="password-container">
 			<label>Enter Password</label>
 			<input type="password" name="password1" id="password-field" placeholder="Password" >
 			<img src="eye (open).png" alt="" id="eyeicon" 
 			style="position:relative;
 			left:242px;
-			top: -45px;">
+			top: -45px;
+			cursor: pointer;">
 			<input type="generator" name="generator" id="generator-field" placeholder="Generate Password" >
 
 			<div class="strength-container">
@@ -43,7 +44,8 @@ position:relative">
 		left: 244px;
 		top: -81px;
 		max-width: 45px;
-		max-height: 17px;">
+		max-height: 17px;
+		cursor: pointer;">
 
 		
 	<!--</p>
@@ -61,5 +63,6 @@ position:relative">
 		top: -51px;">Generate Password</button>
 
 	<script src="script.js"></script> 
+	
 </body>
 </html>
