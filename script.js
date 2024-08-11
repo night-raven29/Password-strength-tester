@@ -22,7 +22,6 @@ passwordField.addEventListener('input', () => {
 
 const generator = document.getElementById("generator-field");
 const length = 12;
-
 const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const lowerCase = "abcdefghijklmnopqrstuvwxyz";
 const numbers = "0123456789";
