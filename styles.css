@@ -131,6 +131,7 @@ button{
 	left: 84px;
 	position: relative;
 	transition: all 0.3s ease-in-out;
+	cursor: pointer;
 }
 
 button1{
